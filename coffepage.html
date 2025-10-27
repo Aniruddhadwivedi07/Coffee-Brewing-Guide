@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Brewing Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #6f4e37;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #d4a574;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 1.1em;
+            color: #f5e6d3;
+        }
+
+        .methods {
+            margin-bottom: 60px;
+        }
+
+        .method-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid rgba(212, 165, 116, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .method-card h2 {
+            color: #d4a574;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #d4a574;
+            padding-bottom: 10px;
+        }
+
+        .method-icon {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .steps {
+            margin-top: 20px;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #d4a574;
+        }
+
+        .step strong {
+            color: #d4a574;
+        }
+
+        .tips {
+            background: rgba(212, 165, 116, 0.2);
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 40px;
+            border: 2px solid #d4a574;
+        }
+
+        .tips h2 {
+            color: #d4a574;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .tip-grid {
+            margin-top: 30px;
+        }
+
+        .tip-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .tip-item h3 {
+            color: #d4a574;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 60px;
+            color: #d4a574;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☕ Coffee Brewing Guide</h1>
+        <p class="subtitle">Master the Art of Perfect Coffee</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>Discover the perfect brewing method for your taste. From bold espresso to smooth pour-over, each technique brings out unique flavors and aromas in your coffee beans.</p>
+        </div>
+
+        <div class="methods">
+            <div class="method-card">
+                <div class="method-icon">🔥</div>
+                <h2>French Press</h2>
+                <p>Rich, full-bodied coffee with robust flavors.</p>
+                <div class="steps">
+                    <div class="step"><strong>Step 1:</strong> Coarse grind 30g coffee beans</div>
+                    <div class="step"><strong>Step 2:</strong> Heat 500ml water to 200°F</div>
+                    <div class="step"><strong>Step 3:</strong> Pour water, stir gently</div>
+                    <div class="step"><strong>Step 4:</strong> Steep for 4 minutes</div>
+                    <div class="step"><strong>Step 5:</strong> Press plunger slowly and serve</div>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <div class="method-icon">💧</div>
+                <h2>Pour Over</h2>
+                <p>Clean, bright coffee with nuanced flavors.</p>
+                <div class="steps">
+                    <div class="step"><strong>Step 1:</strong> Medium grind 25g coffee beans</div>
+                    <div class="step"><strong>Step 2:</strong> Place filter and rinse with hot water</div>
+                    <div class="step"><strong>Step 3:</strong> Add grounds, bloom with 50ml water</div>
+                    <div class="step"><strong>Step 4:</strong> Pour slowly in circular motion</div>
+                    <div class="step"><strong>Step 5:</strong> Total brew time: 3-4 minutes</div>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <div class="method-icon">⚡</div>
+                <h2>Espresso</h2>
+                <p>Intense, concentrated coffee shot.</p>
+                <div class="steps">
+                    <div class="step"><strong>Step 1:</strong> Fine grind 18-20g coffee beans</div>
+                    <div class="step"><strong>Step 2:</strong> Distribute and tamp evenly</div>
+                    <div class="step"><strong>Step 3:</strong> Lock portafilter into machine</div>
+                    <div class="step"><strong>Step 4:</strong> Extract for 25-30 seconds</div>
+                    <div class="step"><strong>Step 5:</strong> Aim for 2oz golden crema shot</div>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <div class="method-icon">⏱️</div>
+                <h2>Cold Brew</h2>
+                <p>Smooth, sweet coffee without bitterness.</p>
+                <div class="steps">
+                    <div class="step"><strong>Step 1:</strong> Coarse grind 100g coffee beans</div>
+                    <div class="step"><strong>Step 2:</strong> Add 1 liter cold water</div>
+                    <div class="step"><strong>Step 3:</strong> Stir to combine thoroughly</div>
+                    <div class="step"><strong>Step 4:</strong> Refrigerate for 12-24 hours</div>
+                    <div class="step"><strong>Step 5:</strong> Strain and dilute to taste</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h2>Pro Tips for Perfect Coffee</h2>
+            <div class="tip-grid">
+                <div class="tip-item">
+                    <h3>🌱 Fresh Beans</h3>
+                    <p>Use beans roasted within 2-4 weeks for optimal flavor</p>
+                </div>
+                <div class="tip-item">
+                    <h3>⚖️ Measure Precisely</h3>
+                    <p>Use a scale for consistent coffee-to-water ratio</p>
+                </div>
+                <div class="tip-item">
+                    <h3>🌡️ Water Temperature</h3>
+                    <p>Ideal brewing temp is 195-205°F (90-96°C)</p>
+                </div>
+                <div class="tip-item">
+                    <h3>💎 Water Quality</h3>
+                    <p>Use filtered water to avoid off-flavors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Brew with love, sip with joy ☕</p>
+    </footer>
+</body>
+</html>
