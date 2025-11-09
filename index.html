@@ -18,6 +18,44 @@
             line-height: 1.6;
         }
 
+
+        [id] {
+            scroll-margin-top: 80px; 
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100vw; 
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #d4a574;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f5e6d3;
+        }
+
        header {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                         url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1920') center/cover;
@@ -199,15 +237,24 @@
     </style>
 </head>
 <body>
-    <header>
+    <nav>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#methods">Methods</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#enjoy">Enjoy !</a></li>
+        </ul>
+    </nav>
+    <header id="header">
         <h1>☕ Coffee Brewing Guide</h1>
         <p class="subtitle">Master the Art of Perfect Coffee</p>
     </header>
 
-  <div class="intro-section">
+  <div class="intro-section" id="intro">
         <p>Discover the perfect brewing method for your taste. From bold espresso to smooth pour-over, each technique brings out unique flavors and aromas in your coffee beans.</p>
     </div>
-        <div class="methods">
+        <div class="methods" id="methods">
             <div class="method-card">
                 <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="French Press Coffee">
                 <div class="method-icon">🔥</div>
@@ -265,7 +312,7 @@
             </div>
         </div>
 
-        <div class="tips">
+        <div class="tips" id="tips">
             <h2>Pro Tips for Perfect Coffee</h2>
             <div class="tip-grid">
                 <div class="tip-item">
@@ -288,7 +335,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="enjoy">
         <p>Brew with love, sip with joy ☕</p>
     </footer>
 </body>
